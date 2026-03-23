@@ -1,5 +1,6 @@
 from torchdiffeq import odeint
-
+import torch
+import torch.nn as nn
 class ODEEvolution(nn.Module):
     def __init__(self, func):
         super().__init__()
