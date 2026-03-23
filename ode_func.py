@@ -1,3 +1,6 @@
+import torch
+import torch.nn as nn
+
 class ODEFunc(nn.Module):
     def __init__(self, ch):
         super().__init__()
