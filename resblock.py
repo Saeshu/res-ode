@@ -1,3 +1,6 @@
+import torch
+import torch.nn as nn
+
 class ResBlock(nn.Module):
     def __init__(self, ch):
         super().__init__()
@@ -19,3 +22,4 @@ class ResNetEvolution(nn.Module):
 
     def forward(self, x):
         return self.blocks(x)
+
