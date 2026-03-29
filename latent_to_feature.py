@@ -1,3 +1,6 @@
+import torch
+import torch.nn as nn
+
 class LatentToFeature(nn.Module):
     def __init__(self, z_dim=128, base_ch=128):
         super().__init__()
